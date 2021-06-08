@@ -1,0 +1,22 @@
+/**
+ * Copyright Victor Berchet
+ *
+ * This file is part of VisuGps3
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ */
+
+{namespace vgps3.loadMask.templates}
+
+/**
+ * @param message The message to display
+ * @param class A CSS class for to add to the message
+ */
+{template .wait}
+<div class="vgps3-progress">
+  <img src="{vgps3.loadMask.IMG_SRC}" width="{vgps3.loadMask.IMG_WIDTH}px" height="{vgps3.loadMask.IMG_HEIGHT}px" alt="chargement" />
+  <p class="{$class}">{$message}</p>
+</div>
+{/template}

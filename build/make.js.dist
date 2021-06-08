@@ -1,0 +1,33 @@
+{
+  "inherits": "config.js",
+  "id": "vgps3",
+  "mode": "ADVANCED",
+  "define": {
+    "vgps3.VERSION": "3.4.0",
+    "goog.DEBUG": false,
+    "goog.Disposable.MONITORING_MODE": 0,
+    "vgps3.topo.fr.API_KEYS": 'domain1="key1" domain2="key2" *="fallback key"',
+    "vgps3.Map.GOOGLE_API_KEYS": 'domain1="key1" domain2="key2" *="fallback key"',
+    "vgps3.airspace.FUSION_TABLE_ID": "Encrypted ID of the fusion table"
+  },
+  "debug": false,
+  "pretty-print": false,
+  "output-wrapper": [
+    "/**\n",
+    " * VisuGps3 Copyright 2013 Victor Berchet <victor@suumit.com>\n",
+    " */\n",
+    "%output%"
+  ],
+  "name-suffixes-to-strip": [
+    "logger",
+    "logger_"
+  ],
+  "type-prefixes-to-strip": [
+    "goog.debug.Console",
+    "goog.debug.Logger",
+    "goog.debug.Trace",
+    "goog.asserts",
+    "goog.testing"
+  ],
+  "output-file": "../dist/vgps3.js"
+}

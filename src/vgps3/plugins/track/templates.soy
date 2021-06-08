@@ -1,0 +1,42 @@
+/**
+ * Copyright Victor Berchet
+ *
+ * This file is part of VisuGps3
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ */
+
+{namespace vgps3.track.templates}
+
+/**
+ * @param fixes
+ * @param index
+ */
+{template .infoControl}
+  <h3><i class="fa fa-info-circle fa-2x"></i></h3>
+  <ul>
+    <li title="{round($fixes['elev'][$index] / 0.3048)}ft">{$fixes['elev'][$index]}m [hV]</li>
+    <li>{max($fixes['elev'][$index] - $fixes['elevGnd'][$index], 0)}m [hS]</li>
+    <li>{$fixes['vario'][$index]}m/s [Vz]</li>
+    <li>{$fixes['speed'][$index]}km/h [Vx]</li>
+    <li>{$fixes['time']['hour'][$index]}:{$fixes['time']['min'][$index]}:{$fixes['time']['sec'][$index]} [Th]</li>
+</ul>
+{/template}
+
+/**
+ * @param date
+ * @param pilot
+ */
+{template .dateControl}
+  <div>
+  <i class="fa {if $pilot}fa-user{else}fa-calendar{/if} fa-2x"></i>
+  <ul class="pull-left">
+    <li>{$date['day']}/{$date['month']}/{$date['year']}</li>
+    {if $pilot}
+      <li>{$pilot}</li>
+    {/if}
+  </ul>
+  <div>
+{/template}

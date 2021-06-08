@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/vgps3.css" />
+    <link rel="stylesheet" type="text/css" href="css/vgps3-chart.css" />
+    <title>VGps3 - dev</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://localhost:9810/compile?id=vgps3-dev"></script>
+</head>
+<body>
+    <div id="fs">
+        <div id="map-container"></div>
+        <div id="charts-container">
+            <div id="charts"></div>
+            <div id="sliders"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        viewer = new vgps3.Viewer(
+            document.getElementById('map-container'),
+            document.getElementById('charts-container')
+        );
+    </script>
+</body>
+</html>

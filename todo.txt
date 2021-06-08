@@ -1,0 +1,26 @@
+- Dispose: check & add to avoid leaks
+  - https://wiki.mozilla.org/Performance%3aLeak_Tools
+  - https://addons.mozilla.org/en-US/firefox/addon/leak-monitor/
+  - https://code.google.com/p/leak-finder-for-javascript/
+
+- track plugin
+  - add a track
+  - remove a track (no more track -> no more marker, ..., remove selected track)
+  - load kml (!earth plugin) -> chart should probably dispay h=f(dist)
+
+- add layers:
+ - skyways (requires a "more" control)
+ - modis
+
+- capture slider events
+
+- minify CSS
+
+- i18n
+
+- compile as modules
+
+- chart plugin
+  - vs distance (in addition to vs time)
+  - allow to specify displayed charts
+
